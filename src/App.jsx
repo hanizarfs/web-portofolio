@@ -11,7 +11,11 @@ import ChromaGrid from "./components/ChromaGrid/ChromaGrid";
 import ProjectModal from "./components/ProjectModal/ProjectModal"; // <-- IMPORT MODAL
 import Aurora from "./components/Aurora/Aurora";
 import AOS from 'aos';
-import ChatRoom from "./components/ChatRoom";
+import melly from "./assets/aslinew.png";
+import profilecard from "./components/ProfileCard/ProfileCard";
+import april from "./assets/mmm.png";
+
+// import ChatRoom from "./components/ChatRoom";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
@@ -75,14 +79,14 @@ function App() {
         <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
             <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
-              <img src="./assets/faris1.png" className="w-10 rounded-md" />
-              <q>Avoid or just undertake it</q>
+              <img src={april} className="w-10 rounded-md" />
+              <q>Speak your ideas. Build your impact.</q>
             </div>
             <h1 className="text-5xl font-bold mb-6">
-              <ShinyText text="Hi I'm Faris Edrik Prayoga" disabled={false} speed={3} className='custom-class' />
+              <ShinyText text="Hi I'm Melly Apriliya" disabled={false} speed={3} className='custom-class' />
             </h1>
             <BlurText
-              text="A passionate application and web developer dedicated to crafting modern, high-performance digital experiences through innovative and user-friendly solutions."
+              text="A Software Engineering student who believes technology is powerful when ideas are shared and voices are heard. I build digital solutions while also using communication and public speaking to inspire others, connect communities, and create meaningful impact."
               delay={150}
               animateBy="words"
               direction="top"
@@ -90,8 +94,8 @@ function App() {
             />
             <div className="flex items-center sm:gap-4 gap-2">
               <a 
-                href="./assets/CV.pdf" 
-                download="Faris_Edrik_Prayoga_CV.pdf" 
+                href="./cv-april.pdf" 
+                download
                 className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
               >
                 <ShinyText text="Download CV" disabled={false} speed={3} className="custom-class" />
@@ -105,12 +109,12 @@ function App() {
           </div>
           <div className="md:ml-auto animate__animated animate__fadeInUp animate__delay-4s">
             <ProfileCard
-              name="Faris Edrik P"
+              name="Melly Apriliya"
               title="Web Developer"
-              handle="farisedrikp"
+              handle="aprlsarchives"
               status="Online"
               contactText="Contact Me"
-              avatarUrl="./assets/faris.png"
+              avatarUrl={melly}
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -129,7 +133,11 @@ function App() {
                 </h2>
 
                 <BlurText
-                  text="I’m Faris Edrik Prayoga, a full-stack developer passionate about building modern, high-performance applications with an intuitive user experience. I enjoy working with the latest technologies like Artificial Intelligence, Machine Learning, and cloud-based development, blending creativity with precision to deliver impactful solutions. With over three years of experience and more than 20 completed projects, I’m committed to helping users and businesses grow in the digital era through functional, aesthetic, and scalable digital products."
+                  text="I’m Melly Apriliya, Hi, I'm Melly Apriliya, a Software Engineering student who is passionate about building technology and empowering people through communication.
+
+While I enjoy developing digital solutions and exploring the world of software, I am equally passionate about public speaking and sharing knowledge with others. I believe technology should not only be created, but also communicated in ways that inspire, educate, and bring people together.
+
+Through continuous learning, collaboration, and community engagement, I aspire to bridge the gap between technology and people — turning ideas into impact and innovation into real-world value."
                   delay={150}
                   animateBy="words"
                   direction="top"
@@ -139,9 +147,9 @@ function App() {
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      20<span className="text-violet-500">+</span>
+                      18<span className="text-violet-500">+</span>
                     </h1>
-                    <p>Project Finished</p>
+                    <p>Project & Activities</p>
                   </div>
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
@@ -151,9 +159,9 @@ function App() {
                   </div>
                   <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      3.81<span className="text-violet-500">/4.00</span>
+                      5<span className="text-violet-500">+</span>
                     </h1>
-                    <p>GPA</p>
+                    <p>Leader Ship Experiences</p>
                   </div>
                 </div>
 
@@ -216,6 +224,7 @@ function App() {
             <ChromaGrid
               items={listProyek}
               onItemClick={handleProjectClick} // Kirim fungsi untuk handle klik
+              columns={3}
               radius={500}
               damping={0.45}
               fadeOut={0.6}
@@ -249,14 +258,37 @@ function App() {
           {/* Container dua kolom */}
           <div className="flex flex-col md:flex-row gap-8">
             {/* Chat Room di kiri */}
-            <div className="flex-1 bg-zinc-800 p-6 rounded-md" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
-              <ChatRoom />
-            </div>
+            <div className="flex-1 bg-zinc-800 p-6 rounded-md" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true"><h2 className="text-2xl font-bold mb-4">
+Let's Create Impact Together
+</h2>
+
+<p className="text-zinc-300 leading-relaxed">
+I’m passionate about technology, communication, and community engagement.
+</p>
+
+<p className="text-zinc-300 leading-relaxed mt-3">
+As a Software Engineering student, I enjoy building digital solutions while also sharing ideas,
+inspiring others, and connecting people through public speaking and collaboration.
+</p>
+
+<p className="text-zinc-300 leading-relaxed mt-3">
+I believe technology becomes meaningful when it brings people together and creates real impact.
+</p>
+
+<div className="mt-6 text-violet-400 text-sm space-y-1">
+<p>• Public Speaking Enthusiast</p>
+<p>• Tech & Community Learner</p>
+<p>• Open for Collaboration</p>
+</div>
+
+</div>
+            { /* <ChatRoom />*/}
+            
 
             {/* Contact Form di kanan */}
             <div className="flex-1">
               <form
-                action="https://formsubmit.co/rissoppa21@gmail.com"
+                action="https://formsubmit.co/mellyapril666@gmail.com"
                 method="POST"
                 className="bg-zinc-800 p-10 w-full rounded-md"
                 autoComplete="off"
@@ -265,6 +297,8 @@ function App() {
                 data-aos-delay="500"
                 data-aos-once="true"
               >
+                <input type="hidden" name="_subject" value="New Message from My Portfolio"></input>
+                <input type="hidden" name="_captcha" value="false"></input>
                 <div className="flex flex-col gap-6">
                   <div className="flex flex-col gap-2">
                     <label className="font-semibold">Full Name</label>
@@ -310,7 +344,7 @@ function App() {
               </form>
             </div>
           </div>
-        </div>
+          </div>
         {/* Kontak */}
       </main>
 
