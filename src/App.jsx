@@ -218,17 +218,17 @@ Through continuous learning, collaboration, and community engagement, I aspire t
                                 <div className="flex flex-col gap-6">
                                     <div className="flex flex-col gap-2">
                                         <label className="font-semibold">Full Name</label>
-                                        <input type="text" name="Name" placeholder="Input Name..." className="border border-zinc-500 p-2 rounded-md" required />
+                                        <input type="text" name="Name" placeholder="Input Name..." className="border border-zinc-500 p-2 rounded-md bg-zinc-900/75" required />
                                     </div>
                                     <div className="flex flex-col gap-2">
                                         <label className="font-semibold">Email</label>
-                                        <input type="email" name="Email" placeholder="Input Email..." className="border border-zinc-500 p-2 rounded-md" required />
+                                        <input type="email" name="Email" placeholder="Input Email..." className="border border-zinc-500 p-2 rounded-md bg-zinc-900/75" required />
                                     </div>
                                     <div className="flex flex-col gap-2">
                                         <label htmlFor="message" className="font-semibold">
                                             Message
                                         </label>
-                                        <textarea name="message" id="message" cols="45" rows="7" placeholder="Message..." className="border border-zinc-500 p-2 rounded-md" required></textarea>
+                                        <textarea name="message" id="message" cols="45" rows="7" placeholder="Message..." className="border border-zinc-500 p-2 rounded-md bg-zinc-900/75" required></textarea>
                                     </div>
                                     <div className="text-center">
                                         <button type="submit" className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full w-full cursor-pointer border border-gray-700 hover:bg-[#222] transition-colors">
